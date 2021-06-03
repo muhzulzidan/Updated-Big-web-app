@@ -1,0 +1,10 @@
+.image-upload-container {
+    border: 1px solid #DBE2EA;
+    border-radius: 15px;
+    background: white;
+}
+
+.upload-image-text {
+    font-size: 16;
+    color: #EEF0F4;
+}

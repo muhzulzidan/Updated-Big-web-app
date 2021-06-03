@@ -1,0 +1,66 @@
+.map-container {
+  border: 1px solid #707070;
+  flex-grow: 1;
+  min-height: 350px;
+}
+
+.marker-container {
+  position: relative;
+  left: -20px;
+  top: -55px;
+  max-width: 50%;
+}
+
+.marker-name {
+  text-align: center;
+  word-wrap: normal;
+}
+
+.mapbox-geocoder-container {
+  position: absolute;
+  margin: 0 auto;
+  width: 50%;
+  left: 25%;
+  bottom: 45px;
+  padding: 25px;
+  border: 1px solid #DBE2EA;
+  border-radius: 15px;
+  background: white;
+  display: flex;
+}
+
+.react-geocoder {
+  flex-grow: 1;
+}
+
+.react-geocoder input{
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.react-geocoder-results {
+  position: absolute;
+  transform: translateY(calc(-100% - 52px));
+  left: 0;
+}
+
+.react-geocoder-item {
+  padding: 25px;
+  border: 1px solid #DBE2EA;
+  border-radius: 15px;
+  background: white;
+  margin: 2;
+  transition: all;
+  cursor: pointer;
+}
+
+.react-geocoder-item:hover {
+  background-color: lightgray;
+}
+
+.current-address-button {
+  color: var(--blue-1);
+  font-weight: 600;
+  cursor: pointer;
+}

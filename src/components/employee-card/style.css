@@ -1,0 +1,94 @@
+.employee-card {
+    position: relative;
+    color: var(--blue-1);
+}
+
+.employee-picture>img {
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin: 10px;
+}
+
+.employee-name {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.employee-email {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.employee-actions {
+    margin: 20px 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+.employee-actions>* {
+    margin: 0 5px;
+}
+
+.employee-roles {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 10px;
+}
+
+.employee-actions .button {
+    border-width: 3px;
+    padding: 2px 5px;
+    min-width: 0;
+}
+
+/* Grid Layout */
+.item-container-grid .employee-card {
+    background-color: #FFFAF4;
+    border: 1px solid var(--blue-1);
+    border-radius: 15px;
+    width: 330px;
+    height: 250px;
+    padding: 18px;
+    margin: 15px;
+}
+
+/* list layout */
+.item-container-list .employee-card {
+    border-top: 1px solid #DBE2EA;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+}
+
+.item-container-list .employee-picture {
+    order: 1;
+    padding-left: 20px;
+}
+
+.item-container-list .employee-name {
+    order: 2;
+    width: 250px;
+    padding-left: 20px;
+}
+
+.item-container-list .employee-roles {
+    order: 3;
+    width: 450px;
+}
+
+.item-container-list .employee-email {
+    order: 4;
+    width: 300px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #8C8C8F;
+}
+
+.item-container-list .employee-actions {
+    order: 5;
+    width: 300px;
+}
+

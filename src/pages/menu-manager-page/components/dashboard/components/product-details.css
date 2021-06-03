@@ -1,0 +1,125 @@
+.product-details {
+    color: white;
+    background-color: var(--blue-1);
+    display: flex;
+    flex-direction: column;
+    width: 364px;
+    flex-shrink: 0;
+    height: 100%;
+    overflow-x: visible;
+    transition: width 300ms, display 300ms;
+}
+
+.product-details::-webkit-scrollbar {
+    width: 6px;
+}
+
+.nav-title-bar {
+    margin: 48px 48px 84px;
+    display: flex;
+    justify-content: space-between;
+    transition: all 700ms;
+}
+
+.product-details-collapse-button {
+    transform: scaleX(-1);
+    transition: transform 700ms ease-out;
+}
+
+.nav-header {
+    font-size: 32px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.product-details hr {
+    border: 1px solid #DBE2EA;
+    width: 100%;
+}
+
+/* .nav-button {
+    padding: 16px 34px;
+    margin: 16px 0;
+    display: flex;
+    font-size: 22px;
+    cursor: pointer;
+    border-left: 4px solid transparent;
+    box-sizing: border-box;
+    transition: all 300ms;
+}
+
+.nav-button.active {
+    border-left: 4px solid white;
+}
+
+.nav-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+} */
+
+.product-details-button-text {
+    margin: 0 3rem;
+    transition: all 700ms;
+}
+
+.nav-profile {
+    display: flex;
+    font-size: 26px;
+    letter-spacing: 0.126em;
+    justify-content: center;
+    align-items: center;
+    margin: auto 0 118px 0;
+    padding-top: 118px;
+    transition: width 700ms;
+}
+
+.nav-profile img {
+    margin-right: 22px;
+    width: 60px;
+    height: 60px;
+}
+
+/* collapse */
+.product-details.product-details-collapse {
+    width: 50px;
+    display: none;
+}
+
+.product-details.product-details-collapse .nav-title-bar {
+    margin: 48px 15px;
+}
+
+.product-details.product-details-collapse .nav-header {
+    display: none;
+}
+
+.product-details.product-details-collapse .product-details-button-text{
+    width: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.product-details.product-details-collapse .nav-button:hover>.product-details-button-text{
+    margin-left: 40px;
+    width: 200px;
+    color: var(--blue-1);
+    font-weight: 700;
+    overflow: visible;
+    z-index: 99;
+}
+
+.product-details.product-details-collapse .nav-button>img {
+    width: 30px;
+    flex-shrink: 0;
+}
+
+.product-details.product-details-collapse .nav-profile {
+    display: none;
+}
+
+.product-details.product-details-collapse .product-details-collapse-button {
+    transform: rotate(0deg);
+}
+
+.product-details.product-details-collapse .nav-button {
+    padding: 20px 5px;
+}

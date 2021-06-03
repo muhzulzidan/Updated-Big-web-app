@@ -1,0 +1,30 @@
+.filter-bar-container {
+    border: 1px solid #DBE2EA;
+    background: white;
+    border-radius: 31px;
+    display: flex;
+    align-items: baseline;
+}
+
+.filter-bar-container img {
+    margin-right: 20px;
+    align-self: center;
+}
+
+.filter-bar-container .select-container {
+    min-width: 160px;
+    border: none;
+    padding: 0;
+    background: transparent;
+    padding: 20px 0 20px 25px;
+}
+
+.filter-bar-container .text-input-container {
+    min-width: 250px;
+    border: none;
+    border-radius: 0;
+    border-left: 1px solid #DBE2EA;
+    padding: 0;
+    background: transparent;
+    padding: 20px 10px 20px 20px;
+}

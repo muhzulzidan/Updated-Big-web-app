@@ -1,0 +1,88 @@
+td {
+  border: 1px solid #f9dea5;
+  text-align: left;
+}
+
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.steps::after {
+  height: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "";
+  border-right: 2px solid #2d2d61;
+}
+
+.steps {
+  position: relative;
+}
+
+.user-select-none {
+  user-select: none;
+}
+
+.focus-outline-0:focus {
+  outline: 0;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.appear {
+  opacity: 0;
+  animation-name: appear;
+  animation-fill-mode: forwards;
+  animation-timing-function: step-end;
+  animation-duration: 0.02s;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 12px solid #021a53;
+}
+
+.icon-btn-active img,
+.icon-btn-active svg {
+  filter: invert(37%) sepia(89%) saturate(2061%) hue-rotate(2deg)
+    brightness(104%) contrast(105%);
+}
+
+.icon-btn img,
+.icon-btn svg {
+  cursor: pointer;
+  width: 28px;
+  height: 28px;
+  transition: transform 0.1s;
+}
+
+.icon-btn:hover img,
+.icon-btn:hover svg {
+  transform: scale(1.1);
+}
+
+.icon-btn:active img,
+.icon-btn:active svg {
+  transform: scale(1.2);
+}

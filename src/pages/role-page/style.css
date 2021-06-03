@@ -1,0 +1,23 @@
+.create-role-panel {
+    width: 1000px;
+    padding: 0 40px;
+}
+
+.create-role-permissions > h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #4C4C4D;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.create-role-permissions > h5 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #4C4C4D;
+    padding: 10px 0;
+}
+
+.create-role-permissions .col-6 {
+    padding: 0;
+}

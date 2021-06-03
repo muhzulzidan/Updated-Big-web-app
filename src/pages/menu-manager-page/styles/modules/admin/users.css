@@ -1,0 +1,54 @@
+.usersadm {
+  width: 100%;
+  padding: 40px 35px;
+  background: #fcfbfa;
+}
+
+.usersadm-head {
+  height: 36px;
+  display: grid;
+  grid-template-columns: 345px 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  align-items: center;
+  color: #021a53;
+  background: #fff;
+  border-radius: 10px;
+  font-weight: 300;
+}
+
+.usersadm-title:first-of-type {
+  margin-left: 86px;
+}
+
+.useradm {
+  height: 50px;
+  display: grid;
+  grid-template-columns: 345px 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  align-items: center;
+  background: #f2f2f2;
+  border-radius: 10px;
+}
+
+.useradm:nth-of-type(2n + 1) {
+  background: #fff;
+}
+
+.useradm-email {
+  width: 396px;
+  display: flex;
+  align-items: center;
+  margin-left: 35px;
+  color: #021a53;
+  font-weight: 500;
+}
+
+.useradm-profile {
+  margin-right: 16px;
+  width: 35px;
+}
+
+.useradm-role {
+  color: #021a53;
+  font-weight: 500;
+}

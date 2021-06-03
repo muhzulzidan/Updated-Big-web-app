@@ -1,0 +1,22 @@
+.textarea-container {
+    padding: 25px 0;
+    border: 1px solid #DBE2EA;
+    border-radius: 15px;
+    background: white;
+    display: flex;
+}
+
+.textarea-container>img {
+    margin-left: 25px;
+    align-self: baseline;
+}
+
+.textarea-container>textarea {
+    height: 100%;
+    outline: none;
+    border: none;
+    flex-grow: 1;
+    margin: 0 26px;
+    padding: 0;
+    resize: none;
+}

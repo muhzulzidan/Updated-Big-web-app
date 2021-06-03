@@ -1,0 +1,48 @@
+.auth-input-container {
+	border: rgba(28, 70, 99, 0.5) solid 1px;
+	border-radius: 15px;
+	width: 396px;
+	height: 74px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    margin-top: 38px;
+    margin-bottom: 19px;
+}
+
+.auth-input-container-error {
+	border: 1px solid red;
+}
+
+.auth-input {
+	height: 100%;
+	outline: none;
+	border: none;
+	flex-grow: 1;
+	border-radius: 15px;
+	padding: 0 27px;
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+.auth-input::placeholder {
+    color: rgba(28, 70, 99, 0.4);
+    text-transform: uppercase;
+}
+
+.auth-input-show-btn {
+	height: 25px;
+	margin: 25px;
+	cursor: pointer;
+	transition: opacity ease-in-out 300ms;
+}
+
+.auth-input-show-btn:hover {
+	opacity: 0.5;
+}
+
+.auth-input-show-btn:active {
+	opacity: 1;
+}

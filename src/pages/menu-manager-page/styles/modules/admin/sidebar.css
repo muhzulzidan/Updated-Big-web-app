@@ -1,0 +1,118 @@
+.sidebar-admin {
+  position: fixed;
+  left: 0;
+  padding: 16px 0 21px 0;
+  min-height: 200px;
+  height: 100vh;
+  min-width: 174px;
+  width: 174px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #fffaf4;
+  z-index: 100;
+}
+
+.sibaadm-header {
+  margin-bottom: 50px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.sibaadm-header-rect {
+  margin-right: 2px;
+  display: inline-block;
+  width: 90px;
+  height: 26px;
+  background: #fefbf6;
+}
+
+.sibaadm-header-user {
+  margin-bottom: 4px;
+  color: #021a53;
+  font-weight: 900;
+  line-height: 0.8;
+}
+
+.siba-header-user-admin {
+  margin-left: 3px;
+  margin-right: 24px;
+  margin-bottom: 4px;
+  color: #021a53;
+  font-weight: 900;
+  line-height: 0.8;
+}
+
+.siba-header-user-title {
+  font-style: italic;
+  margin-bottom: 4px;
+  color: #021a53;
+  font-weight: 400;
+  line-height: 0.8;
+}
+.sibaadm-links {
+  margin-left: 26px;
+}
+
+.sibaadm-link {
+  display: block;
+  margin-bottom: 19px;
+  font-weight: 500;
+  color: #ababab;
+  cursor: pointer;
+  transition: color ease-in-out 300ms;
+}
+
+.sibaadmr-link-active {
+  color: #021a53;
+}
+
+.sibaadm-btns {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sibaadm-btn {
+  width: 116px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 36px;
+  cursor: pointer;
+  outline: none;
+  transition: opacity ease-in-out 300ms;
+}
+
+.sibaadm-btn:hover {
+  opacity: 0.9;
+}
+
+.sibaadm-btn:first-of-type {
+  margin-bottom: 10px;
+  color: #fff;
+  background: #021a53;
+  line-height: 0.8;
+  font-weight: 500;
+}
+
+.sibaadm-btn-plus {
+  margin-right: 4px;
+  font-size: 24px;
+  font-weight: 100;
+}
+
+.sibaadm-btn-create {
+  color: #fff;
+}
+
+.sibaadm-btn:last-of-type {
+  color: #9b3332;
+  border: #9b3332 solid 1px;
+  background: none;
+  font-weight: 600;
+  line-height: 0.8;
+}

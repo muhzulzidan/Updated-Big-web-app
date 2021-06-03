@@ -1,0 +1,284 @@
+.create-item-button {
+    font-size: 23px;
+    font-weight: 600;
+    display: flex;
+    align-items: baseline;
+    color: var(--blue-1);
+}
+.catalog{
+
+}
+
+.catalog .side-panel-status-bar {
+    margin-bottom: .2em;
+}
+.catalog .side-panel-title{
+    margin-top: 10vh;   
+    font-weight: 600;
+}
+
+.catalog  .hr{
+    border-bottom: 1px solid var(--blue-1);
+    height: 10px;
+    width: 95%;
+    display: flex;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.catalog-items{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    padding: 1em;
+
+    transition-delay: .1s;
+    transition: opacity ease-out 0.2s;
+}
+
+.catalog-items a:hover, .catalog-items a{
+    text-decoration:none;
+}
+
+.catalog-items > button{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    background: #FFFFFF;
+
+    font-weight: 700;
+
+    padding: 1em;
+    margin-bottom: 1em;
+}
+.catalog-items >div > a > button {
+    color:var(--blue-1)
+}
+.catalog-items >div > a > button > p {
+    font-weight: 400;
+    font-style: italic;
+    font-size: calc(0.5em + .6vw);
+}
+
+.catalog-container{
+    display: flex;
+    justify-content: flex-end;
+    transition: opacity ease-out 0.2s ;
+
+    font-size: calc(14px + .6vw);
+
+}
+
+.catalog-container.hidden {
+    opacity: 0;
+}
+
+
+.create-catalog-container{
+    position: absolute;
+    top: 3vh;
+    right: 5vw;
+
+    height: 2em;
+    width: calc(23em + 1vw);
+    
+    display: flex;
+    justify-content: space-around;
+
+    font-size: calc(7px + 1vw);
+
+}
+
+.create-catalog{
+    display: flex;
+    padding: .2em;
+    border: 1px solid var(--blue-1);
+    border-radius: 30px;
+    width: 10em;
+    justify-content: center;
+
+}
+
+.catalog-check, .folder, .check, .fullscreen, .edit {
+    width: 1.5em;
+    height: auto;
+}
+
+.catalog-details{
+    width: 91%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+}
+.catalog-details p{
+    color:var(--blue-1);
+    font-style: italic;
+}
+
+.save-hidden{
+    transform: translateY(50%);
+}
+
+.save-div{
+    justify-content: start;
+    transition: transform ease-out 0.2s;
+}
+
+.save-to-branch{
+    margin-bottom: .5em;
+    padding: .5em 1em .5em 1em;
+    color: white;
+    border-radius: 25px;
+    background-color: var(--blue-1);
+}
+
+
+.product .startupcard{
+    /* border: 1px solid #E1E1E1; */
+    border-radius: 40px;
+
+    width: 12em;
+    height: 15em;
+
+    margin: 1em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* .product .startupcard:before{
+        content: ' ';
+        background-image: url('../../../assets/clip.svg');
+        background-repeat: no-repeat;
+        background-size: 3em 3em;
+        height: 3em;
+        width: 3em;
+
+        position: relative;
+        right: -111px;
+        bottom: -300px;
+        border-bottom-right-radius: 30px;
+} */
+/* .product .startupcard-green:before{
+        background-image: url('../../../assets/clip-green.svg');
+        background-repeat: no-repeat; 
+} */
+
+/* .product .selected{
+    border-color: green;
+} */
+
+.startupcard .clip-svg{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    /* bottom: -20px; */
+    
+    width: 3em;
+}
+
+.startupcard-image {
+    width: 80%;
+    border: 1px solid #E1E1E1;
+    border-radius: 20px;
+    
+}
+
+.startupcard .details{
+    display: flex;
+    align-self: start;
+    flex-direction: column;
+
+    margin-left: auto;
+    margin-right: auto;
+    
+    width: 80%;
+
+    padding-top: .5em;
+    padding-bottom: .5em;
+
+    text-align: start;
+}
+.startupcard .details h3{
+    margin : 0;
+    font-weight: 600;
+    font-size:calc(0.5em + 1vw);
+}
+.startupcard .details p{
+    font-weight: 400;
+    margin : 0;
+    font-size:calc(0.4em + 1vw);
+}
+
+.product{
+    color: var(--blue-1);
+    list-style: none;
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.product a{
+    color:var(--blue-1);
+}
+
+.product-button{
+    position:relative;
+}
+
+.product .blockchain svg {
+    width: 6em;
+    position: absolute;
+    top: 0em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  
+  .product .blockchain h2 {
+    margin: 0;
+    margin-top: .2em;
+    font-size: 2.5em;
+  }
+  
+  .product .blockchain .details {
+    bottom: 2em;
+  }
+  
+  .product .blockchain .details .learn {
+    width: 10em;
+  }
+  
+  .product .blockchain .details .funding {
+    margin: 0;
+    margin-top: .2em;
+    margin-bottom: .2em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    font-size: 1.5em;
+  }
+
+.product-name{
+
+}
+.image-upload{
+    width:21em;
+    height: 15em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+}

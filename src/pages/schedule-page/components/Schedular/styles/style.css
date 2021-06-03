@@ -1,0 +1,136 @@
+td {
+  border: 1px solid #f9dea5;
+  text-align: left;
+}
+
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.p-4 {
+  padding: 0rem 1.5rem 0rem 1.5rem !important;
+}
+.MuiContainer-root {
+  
+  height: calc(75% + 16px);
+}
+
+
+.MuiBox-root-13 {
+  margin-top: 33px;
+  height: calc(100% + 16px);
+  overflow-y: scroll;
+  overflow-x: hidden;}
+
+
+.MuiBox-root-46 {
+  margin: -14px 37px -24px 0;
+}
+.flex-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.steps::after {
+  height: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "";
+  border-right: 2px solid #2d2d61;
+}
+
+.steps {
+  position: relative;
+}
+
+.user-select-none {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.focus-outline-0:focus {
+  outline: 0;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.appear {
+  opacity: 0;
+  -webkit-animation-name: appear;
+  animation-name: appear;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-timing-function: step-end;
+  animation-timing-function: step-end;
+  -webkit-animation-duration: 0.02s;
+  animation-duration: 0.02s;
+}
+
+@-webkit-keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 12px solid #021a53;
+}
+
+/* .rc-slider-handle {
+  -webkit-transform: translateX(calc(-50% + 10px)) !important;
+  transform: translateX(calc(-50% + 10px)) !important;
+} */
+
+.icon-btn-active img {
+  -webkit-filter: invert(37%) sepia(89%) saturate(2061%) hue-rotate(2deg)
+    brightness(104%) contrast(105%);
+  filter: invert(37%) sepia(89%) saturate(2061%) hue-rotate(2deg)
+    brightness(104%) contrast(105%);
+}
+
+.icon-btn img {
+  cursor: pointer;
+  width: 28px;
+  height: 28px;
+  -webkit-transition: -webkit-transform 0.1s;
+  transition: -webkit-transform 0.1s;
+  transition: transform 0.1s;
+  transition: transform 0.1s, -webkit-transform 0.1s;
+}
+
+.icon-btn:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.icon-btn:active img {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+/*# sourceMappingURL=style.css.map */

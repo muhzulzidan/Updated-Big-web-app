@@ -1,0 +1,28 @@
+:root {
+  --blue-1: #001d53;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins;
+}
+
+a {
+  text-decoration: none;
+}
+
+textarea {
+  font-family: Poppins;
+}
+
+input:disabled {
+  background: #d8d8d8;
+}
+.app{
+  height: 100%;
+}

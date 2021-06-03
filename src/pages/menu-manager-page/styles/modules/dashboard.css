@@ -1,0 +1,183 @@
+.dash-siba {
+  position: fixed;
+  height: 100%;
+  min-height: 600px;
+  min-width: 258px;
+  width: 93vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #F2F2F2;
+}
+
+.dash-siba-head {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 0px;
+  margin-left: 1em;
+  margin-right: 1em;
+
+  text-align: left;
+  color: #021a53;
+  /* font-weight: 900; */
+  /* font-size: 21px; */
+}
+
+.dash-siba-profile {
+  width: 224px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  margin-left: 10px;
+  border-radius: 50px;
+  background: #fff;
+  border: #041753 solid 1px;
+}
+
+.dash-siba-profile-name {
+  color: #021a53;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity ease-in-out 300ms;
+}
+
+.dash-siba-profile-name:hover {
+  opacity: 0.8;
+}
+
+.dash-siba-profile-img {
+  width: 35px;
+  height: 35px;
+  margin-left: 4px;
+  margin-right: 11px;
+  border-radius: 50%;
+}
+
+.dash-siba-line {
+  margin-bottom: 16.5px;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #c4c4c4;
+}
+
+.dash-siba-rest {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  margin-bottom: 12px;
+}
+
+.dash-siba-rest-name {
+  color: #041753;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  cursor: pointer;
+  transition: opacity ease-in-out 300ms;
+}
+
+.dash-siba-rest-name:hover {
+  opacity: 0.8;
+}
+
+.dash-siba-rest-img {
+  width: 32px;
+  margin-right: 14px;
+}
+
+
+.hr{
+  height: 5px;
+  color: var(--blue-1)
+}
+
+.dash-siba-menu{
+  font-size: calc(1.1rem + 0.6vw);
+  width: 30vw;
+}
+
+.dash-siba-menu > h3{
+  display: flex;
+
+  font-size: inherit;
+  font-weight: 600;
+  
+  margin-bottom: calc(1.5rem + 0.6vh); 
+
+
+  
+}
+
+
+.content-span{
+  display: flex;
+  width: 13em;
+
+  padding: 1em 1em 1em .5em;
+
+  border-radius: 5%;
+
+  /* stroke: var(--blue-1); */
+}
+
+.content-span a,  .content-span a:hover{
+  color:inherit;
+}
+
+.content-span:hover{
+  background-color: var(--blue-1); 
+  color: var(--white-1);
+  fill: var(--white-1);
+  /* stroke: var(--white-1) !important; */
+
+  cursor:pointer;
+}
+
+
+
+.dash-siba-menu > span:hover{
+  background-color: var(--blue-1);
+  color: var(--white-1);
+  fill: var(--white-1);
+  stroke: var(--white-1);
+}
+
+/* .dash-siba-menu > h3:nth-child(1){ */
+  /* margin-bottom: calc(1.5rem + 0.6vh); */
+/* } */
+
+.inventory-icon{
+  width: calc(2rem + 0.6vw);
+  margin-right: 1em;
+}
+
+.cata-icon{
+  stroke: black;
+}
+
+.content-span:hover .cata-icon{
+  stroke: var(--white-1) !important;
+}
+
+.plus-icon{
+  width: calc(4rem + 0.6vw);
+  fill: inherit;
+  float:right;
+  padding-left: 1em;
+}
+
+
+@media (min-width: 767px) {
+  .dash-siba {
+    width: 43vw;
+  }
+}
+@media (min-width: 900px) {
+  .dash-siba {
+    width: 35vw;
+  }
+}

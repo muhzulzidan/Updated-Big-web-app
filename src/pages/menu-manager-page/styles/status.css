@@ -1,0 +1,10 @@
+.is-err-border {
+  border-color: red !important;
+}
+
+.is-err-msg {
+  margin-top: 5px;
+  color: red !important;
+  font-size: 12px;
+  font-weight: 600;
+}

@@ -1,0 +1,162 @@
+.drop-source {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+  border-radius: 10px;
+  background: #f2f2f2;
+}
+
+.drop-title {
+  width: calc(100% - 12px);
+  display: flex;
+  flex-direction: column;
+  padding: 6px;
+  margin: 6px;
+  color: #021a53;
+  background: #fff;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.drop-title-img {
+  width: 180px;
+  height: 60px;
+  border-radius: 10px;
+}
+
+.drop-upload {
+  padding: 5px 0;
+  width: 100%;
+  color: #021a53;
+  border-top: #dadada solid 1px;
+  text-align: center;
+  cursor: pointer;
+  transition: opacity ease-in-out 300ms;
+}
+
+.drop-upload img {
+  width: 15px;
+}
+
+.drop-upload:hover {
+  opacity: 0.7;
+}
+
+.drop-area {
+  width: calc(100% - 12px);
+  padding: 12px 6px 12px 6px;
+  border-radius: 10px;
+  color: #dfdfdf;
+  font-weight: 500;
+  font-size: 15px;
+  text-align: center;
+}
+
+.drop-area-elem {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  width: 190px;
+  height: 50px;
+  padding: 6px;
+  color: #021a53;
+  border-radius: 10px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.drop-image {
+  margin-right: 10px;
+  width: 40px;
+  border-radius: 10px;
+}
+
+.drop-area-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.drop-area-grid .drop-image {
+  margin: 0;
+}
+
+.drop-update-msg {
+  width: 100vw;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: green;
+  background: #fff;
+  text-align: center;
+  z-index: 9999;
+  transition: opacity ease-in-out 300ms;
+}
+
+.drop-update-msg-hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.drop-area-tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.drop-area-tooltip::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  font-size: 12px;
+  transform: translateX(-40px) translateY(-100%);
+  z-index: 1;
+  visibility: hidden;
+}
+
+.drop-area-tooltip:hover::before {
+  visibility: visible;
+}
+
+.drop-source-ingred:first-of-type {
+  margin-top: 25px;
+}
+
+.drop-source-ingred {
+  margin-top: 10px;
+}
+
+.drop-source-ingred .drop-area-elem {
+  margin: 8px 0;
+}
+
+.drop-area-grid .drop-image {
+  margin: 0;
+}
+
+@media only screen and (max-width: 1025px) {
+  .drop-area-elem {
+    width: 128px;
+    font-size: 10px;
+  }
+
+  .drop-title-img {
+    width: 118px;
+  }
+
+  .drop-area-grid .drop-image {
+    width: 30px;
+  }
+
+  .drop-area {
+    font-size: 12px;
+  }
+}

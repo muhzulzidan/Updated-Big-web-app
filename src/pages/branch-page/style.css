@@ -1,0 +1,116 @@
+.store-card {
+    background-color: white;
+    border: 1px solid #DBE2EA;
+    border-radius: 16px;
+    display: flex;
+    margin: 45px;
+    padding: 30px;
+    overflow-x: auto;
+}
+
+.store-card::-webkit-scrollbar {
+    display: none;
+}
+
+.store-summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 330px;
+    border-right: 1px solid #DBE2EA;
+    padding-right: 30px;
+}
+
+.store-logo>img{
+    width: 145px;
+    height: 145px;
+}
+
+.store-name {
+    color: var(--blue-1);
+    font-size: 28px;
+    font-weight: 700;
+    margin: 10px 0;
+    word-break: break-all;
+}
+
+.store-description {
+    margin: 10px 0;
+    padding: 10px;
+    overflow: auto;
+    border: 1px solid #DBE2EA;
+    border-radius: 10px;
+    width: 100%;
+    height: 90px;
+    color: #BBBBBB;
+    font-size: 15px;
+    font-weight: 600;
+    word-break: break-all;
+
+
+}
+
+.store-info {
+    position: relative;
+    flex-grow: 1;
+    min-width: 900px;
+}
+
+.store-info>div:first-child {
+    border-bottom: 1px solid #DBE2EA;
+}
+
+.store-info>div {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.store-info>div>div {
+    width: 25%;
+    padding: 20px;
+}
+
+.store-info-title {
+    font-size: 17px;
+    font-weight: 400;
+    color: #E2E2E6;
+}
+
+.store-info-data {
+    font-size: 20px;
+    font-weight: 600;
+    color: #4C4C4D;
+    overflow-wrap: break-word;
+}
+
+.store-documents {
+    height: 80px;
+    overflow: auto;
+}
+
+.store-info .button {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    padding: 5px;
+    min-width: 110px;
+}
+
+.edit-store-form {
+    width: 950px;
+}
+
+.edit-store-form .col-lg-6 {
+    padding: 0;
+}
+
+.edit-store-form .select-container>img {
+    margin: 0 5px;
+    width: 19px;
+}
+
+.branch-form {
+    width: 950px;
+    display: flex;
+    flex-direction: column;
+}

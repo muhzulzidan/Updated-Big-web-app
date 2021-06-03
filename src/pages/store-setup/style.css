@@ -1,0 +1,103 @@
+.store-setup-container {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FCFCFC;
+    overflow: auto;
+}
+
+.store-setup-form {
+    padding: 0 130px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.store-setup-h1 {
+    font-size: 47px;
+    font-weight: 600;
+    color: var(--blue-1);
+}
+
+.store-setup-h2 {
+    font-size: 32px;
+    font-weight: 600;
+    font-style: italic;
+    color: var(--blue-1);
+}
+
+.store-setup-h3 {
+    font-size: 25px;
+    color: var(--blue-1);
+}
+
+.store-setup-h4 {
+    font-size: 20px;
+    color: var(--blue-1);
+}
+
+.store-setup-title {
+    width: 850px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.create-store-dash-boarder {
+    border: 3px dashed #DCDCDC;
+    margin: auto;
+    padding: 85px 108px;
+}
+
+.create-store-input-container {
+    margin-top: 60px;
+}
+
+.create-store-input-container>*{
+    margin: 17px;
+}
+
+.create-store-buton-panel {
+    margin-top: auto;
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+
+.create-store-select-location-button {
+    margin: 0;
+    color: #FF5E00;
+    font-size: 20px;
+    cursor: pointer;
+    transition: opacity 300ms;
+}
+
+.create-store-select-location-button:hover {
+    opacity: 0.5;
+}
+
+.create-store-input-panel {
+    padding: 25px;
+    border: 1px solid #DBE2EA;
+    border-radius: 15px;
+    background: white;
+}
+
+.create-store-input-panel-title {
+    font-size: 21px;
+    font-weight: 600;
+    color: var(--blue-1);
+}
+
+.create-store-upload-button {
+    padding: 10px 20px;
+}
+
+.create-store-document-file {
+    font-size: 13px;
+    font-weight: 500;
+    color: #AFAEB1;
+    margin: 10px;
+}

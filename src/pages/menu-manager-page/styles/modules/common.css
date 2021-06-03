@@ -1,0 +1,89 @@
+.checkbox-container {
+  position: relative;
+  margin-left: 75px;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-label {
+  margin-right: 58px;
+  color: #021a53;
+  font-size: 24px;
+  line-height: 42px;
+  font-weight: 500;
+}
+
+.checkbox {
+  display: none;
+  position: absolute;
+}
+
+.checkbox-inp {
+  position: relative;
+}
+
+.checkbox-inp .layer {
+  width: 56px;
+  height: 27px;
+  background-color: #fff;
+  border: #707070 solid 1px;
+  border-radius: 35px;
+  transition: 0.3s ease all;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.checkbox-inp .knobs:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #001d53a8;
+  transform: translateY(-50%);
+  transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+  cursor: pointer;
+}
+
+.checkbox-inp .checkbox:checked + .knobs:before {
+  content: "";
+  left: 30px;
+  background-color: #001d53;
+}
+
+.checkbox-inp .knobs,
+.checkbox-inp .knobs:before,
+.checkbox-inp .layer {
+  transition: 0.3s ease all;
+}
+
+.modf-add-item .checkbox-label {
+  margin-right: 152px;
+}
+
+.delete {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 50px;
+  right: calc(50% - 25px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: opacity ease-in-out 300ms, transform ease-in-out 300ms;
+  border: red solid 1.5px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.456);
+}
+
+.delete img {
+  width: 20px;
+}
+
+.delete:hover {
+  transform: scale(1.1);
+}

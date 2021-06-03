@@ -1,0 +1,739 @@
+{
+	"info": {
+		"_postman_id": "dcda2fce-4a8e-44e0-8c09-28b0e55d74d0",
+		"name": "Schedules",
+		"description": "Schedules Service API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Update an existing Schedule",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"my schedule\",\n  \"policy_id\": null,\n  \"timings\": [\n    {\n        \"id\":\"01EZ7KK7AZ3JEHA1GBRG46XN97\",\n      \"start\": 2160,\n      \"stop\": 2940\n    }\n  ],\n  \"zone\": \"Asia/Riyadh\"\n}"
+				},
+				"url": {
+					"raw": "{{schedules_server}}/schedules/01EZ82BN1J0GKRV2SHEEFASCN6",
+					"host": [
+						"{{schedules_server}}"
+					],
+					"path": [
+						"schedules",
+						"01EZ82BN1J0GKRV2SHEEFASCN6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Schedule",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"schedule_id\": \"01E9WFCXMK779HESP4DN5F493A\",\n  \"owner_id\": \"01EYZT7ZR4SBGQB5M4RWEJY0YW\",\n  \"name\": \"Default schedule\",\n  \"policy_id\": null,\n  \"timings\": [\n    {\n        \"id\":\"01EZ7KK7AZSEZJAKYVP4GD1G07\",\n      \"start\": 720,\n      \"stop\": 1470\n    },\n    {\n        \"id\":\"01EZ7KK7AZ3JEHA1GBRG46XN97\",\n      \"start\": 2160,\n      \"stop\": 2940\n    },\n    {\n        \"id\":\"01EZ7KK7AZ3A4N881RZQ55ADAX\",\n      \"start\": 3600,\n      \"stop\": 4350\n    },\n    {\n        \"id\":\"01EZ7KK7AZYYVWGRCD7JKV0HD5\",\n      \"start\": 5040,\n      \"stop\": 5790\n    },\n    {\n        \"id\":\"01EZ7KK7AZS3WSQ10286YD86JB\",\n      \"start\": 6480,\n      \"stop\": 7260\n    },\n    {\n        \"id\":\"01EZ7KK7B0XXVSACF8DFT4BXJN\",\n      \"start\": 7980,\n      \"stop\": 8700\n    },\n    {\n        \"id\":\"01EZ7KK7B0ZJ1HPM290DEFMWXR\",\n      \"start\": 9360,\n      \"stop\": 30\n    }\n  ],\n  \"zone\": \"Asia/Riyadh\"\n}"
+				},
+				"url": {
+					"raw": "{{schedules_server}}/schedules/",
+					"host": [
+						"{{schedules_server}}"
+					],
+					"path": [
+						"schedules",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Schedule",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{schedules_server}}/schedules/01EZ9SSHPQHMPM5PFBACWQ5T8D",
+					"host": [
+						"{{schedules_server}}"
+					],
+					"path": [
+						"schedules",
+						"01EZ9SSHPQHMPM5PFBACWQ5T8D"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Schedule",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{schedules_server}}/schedules/01EZ7PWNGF44R5BGBHV3DK849K",
+					"host": [
+						"{{schedules_server}}"
+					],
+					"path": [
+						"schedules",
+						"01EZ7PWNGF44R5BGBHV3DK849K"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Schedule",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{schedules_server}}/schedules/01EZ7PWNGF44R5BGBHV3DK849K?Content-type=application/json",
+							"host": [
+								"{{schedules_server}}"
+							],
+							"path": [
+								"schedules",
+								"01EZ7PWNGF44R5BGBHV3DK849K"
+							],
+							"query": [
+								{
+									"key": "Content-type",
+									"value": "application/json"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"schedule_id\": \"01E9WFCXMK779HESP4DN5F493A\",\n    \"owner_id\": \"01EYZT7ZR4SBGQB5M4RWEJY0YW\",\n    \"name\": \"Default schedule\",\n    \"policy_id\": null,\n    \"timings\": [\n        {\n            \"id\": \"01EZ7KK7AZSEZJAKYVP4GD1G07\",\n            \"start\": 720,\n            \"stop\": 1470\n        },\n        {\n            \"id\": \"01EZ7KK7AZ3JEHA1GBRG46XN97\",\n            \"start\": 2160,\n            \"stop\": 2940\n        },\n        {\n            \"id\": \"01EZ7KK7AZ3A4N881RZQ55ADAX\",\n            \"start\": 3600,\n            \"stop\": 4350\n        },\n        {\n            \"id\": \"01EZ7KK7AZYYVWGRCD7JKV0HD5\",\n            \"start\": 5040,\n            \"stop\": 5790\n        },\n        {\n            \"id\": \"01EZ7KK7AZS3WSQ10286YD86JB\",\n            \"start\": 6480,\n            \"stop\": 7260\n        },\n        {\n            \"id\": \"01EZ7KK7B0XXVSACF8DFT4BXJN\",\n            \"start\": 7980,\n            \"stop\": 8700\n        },\n        {\n            \"id\": \"01EZ7KK7B0ZJ1HPM290DEFMWXR\",\n            \"start\": 9360,\n            \"stop\": 30\n        }\n    ],\n    \"zone\": \"Asia/Riyadh\"\n}"
+				}
+			]
+		},
+		{
+			"name": "List Schedules by Owner",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{schedules_server}}/schedules/owner/01EYZT7ZR4SBGQB5M4RWEJY0YW",
+					"host": [
+						"{{schedules_server}}"
+					],
+					"path": [
+						"schedules",
+						"owner",
+						"01EYZT7ZR4SBGQB5M4RWEJY0YW"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Schedule Name",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"new name\",\n  \"policy_id\": null,\n  \"timings\": [\n    {\n        \"id\":\"01EZ7KK7AZ3JEHA1GBRG46XN97\",\n      \"start\": 2160,\n      \"stop\": 2940\n    }\n  ],\n  \"zone\": \"Asia/Riyadh\"\n}"
+				},
+				"url": {
+					"raw": "{{schedules_server}}/schedules/01EZ82BN1J0GKRV2SHEEFASCN6/edit/name",
+					"host": [
+						"{{schedules_server}}"
+					],
+					"path": [
+						"schedules",
+						"01EZ82BN1J0GKRV2SHEEFASCN6",
+						"edit",
+						"name"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Roles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{schedules_server}}/roles/01EZ7PWNGF44R5BGBHV3DK849K",
+					"host": [
+						"{{schedules_server}}"
+					],
+					"path": [
+						"roles",
+						"01EZ7PWNGF44R5BGBHV3DK849K"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "List Roles",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{schedules_server}}/roles/01EZ7PWNGF44R5BGBHV3DK849K",
+							"host": [
+								"{{schedules_server}}"
+							],
+							"path": [
+								"roles",
+								"01EZ7PWNGF44R5BGBHV3DK849K"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"type\": \"roles\",\n            \"id\": \"role::accountviewer\",\n            \"uid\": \"01DZP6E254NPC1TA9KA96NTXK7\",\n            \"name\": \"Account Viewer\",\n            \"permissions\": [\n                \"Add employee\",\n                \"Add branch\",\n                \"Delete Role\",\n                \"Add role\"\n            ]\n        },\n        {\n            \"type\": \"roles\",\n            \"id\": \"role::user\",\n            \"uid\": \"01DZNXYP413C08FDNFSV2JBP7C\",\n            \"name\": \"user\",\n            \"permissions\": [\n                \"Add employee\",\n                \"Add branch\",\n                \"Delete Role\",\n                \"Add role\",\n                \"get.users.audits\",\n                \"post.users.roles\",\n                \"delete.users.roles\",\n                \"post.twofactor.enable\",\n                \"get.twofactor.qr\",\n                \"delete.twofactor.disable\",\n                \"get.twofactor.recovery\",\n                \"post.twofactor\",\n                \"patch.users.password\",\n                \"post.users.profile\",\n                \"delete.users.roles\",\n                \"post.twofactor\"\n            ],\n            \"source\": \"_system\"\n        },\n        {\n            \"type\": \"roles\",\n            \"id\": \"role::admin\",\n            \"uid\": \"01E85BZNP4355EXRVMX9VPCYFZ\",\n            \"name\": \"admin\",\n            \"permissions\": [\n                \"Add employee\",\n                \"Add branch\",\n                \"Delete Role\",\n                \"Add role\",\n                \"get.admin.resource\",\n                \"post.admin.resource.rid.add.sid\",\n                \"post.admin.resource.rid.remove.sid\",\n                \"post.admin.roles\",\n                \"patch.admin.roles.id\",\n                \"delete.admin.roles.id\",\n                \"get.admin.roles.id\",\n                \"get.admin.roles\",\n                \"post.admin.roles.rid.add.sid\",\n                \"post.admin.roles.rid.remove.sid\",\n                \"post.admin.permission\",\n                \"get.admin.resource.id.permissions\",\n                \"delete.admin.permission.id\",\n                \"get.admin.permission.id\",\n                \"get.admin.permission\",\n                \"post.admin.user.uid.add\",\n                \"post.admin.user.uid.remove\",\n                \"post.admin.resource.id.hosts\",\n                \"get.admin.resource.id.hosts\",\n                \"delete.admin.resource.id.hosts\",\n                \"get.admin.user\"\n            ],\n            \"source\": \"_system\"\n        },\n        {\n            \"type\": \"roles\",\n            \"id\": \"role::companyowner\",\n            \"uid\": \"01E108C3GG40MRDF53B8036KJ6\",\n            \"name\": \"Company Owner\",\n            \"permissions\": [\n                \"get.company.default\",\n                \"post.company.create\"\n            ]\n        },\n        {\n            \"type\": \"roles\",\n            \"id\": \"role::menuowner\",\n            \"uid\": \"01E0Q6KSXHWT5HN7FM0CFCFZR5\",\n            \"name\": \"Menu Owner\",\n            \"permissions\": [\n                \"Add employee\",\n                \"Add branch\",\n                \"Delete Role\",\n                \"Add role\",\n                \"delete.menu.cid.id\",\n                \"post.menu.save\",\n                \"patch.menu.id.key\",\n                \"get.menu.render.from.id\",\n                \"get.menu.raw.type.id.type\",\n                \"patch.menu.id\",\n                \"post.menu.id.category\"\n            ]\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "List Employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{schedules_server}}/employees/01EZ7PWNGF44R5BGBHV3DK849K",
+					"host": [
+						"{{schedules_server}}"
+					],
+					"path": [
+						"employees",
+						"01EZ7PWNGF44R5BGBHV3DK849K"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "List Employees",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{schedules_server}}/employees/01EZ7PWNGF44R5BGBHV3DK849K",
+							"host": [
+								"{{schedules_server}}"
+							],
+							"path": [
+								"employees",
+								"01EZ7PWNGF44R5BGBHV3DK849K"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"type\": \"employees\",\n            \"id\": \"employee::john_doe1\",\n            \"uid\": \"01DZP6E254NPC1TA9KA96NTXK7\",\n            \"name\": \"John Doe\",\n            \"isActive\": true,\n            \"isInvited\": true,\n            \"hasAcceptedInvitation\": true,\n            \"isInvitationExpired\": true,\n            \"roles\": [\n                    \"role::accountviewer\",\n                    \"role::user\"\n                ],\n            \"schedules\": [],\n            \"email\": \"john_doe@email.com\"\n        },\n        {\n            \"type\": \"employees\",\n            \"id\": \"employee::john_doe2\",\n            \"uid\": \"01DZP6E254NPC1TA9KA96NTXK7\",\n            \"name\": \"John Doe\",\n            \"isActive\": false,\n            \"isInvited\": true,\n            \"isInvitationExpired\": true,\n            \"hasAcceptedInvitation\": false,\n            \"roles\": [\n                    \"role::accountviewer\",\n                    \"role::user\",\n                    \"role::admin\",\n                    \"role::companyowner\",\n                    \"role::menuowner\"\n                ],\n            \"schedules\": [],\n            \"email\": \"john_doe@email.com\"\n        },\n        {\n            \"type\": \"employees\",\n            \"id\": \"employee::john_doe3\",\n            \"uid\": \"01DZP6E254NPC1TA9KA96NTXK7\",\n            \"name\": \"John Doe\",\n            \"isActive\": false,\n            \"isInvited\": true,\n            \"isInvitationExpired\": true,\n            \"hasAcceptedInvitation\": true,\n            \"roles\": [\n                    \"role::accountviewer\",\n                    \"role::user\"\n                ],\n            \"schedules\": [],\n            \"email\": \"john_doe@email.com\"\n        },\n        {\n            \"type\": \"employees\",\n            \"id\": \"employee::john_doe4\",\n            \"uid\": \"01DZP6E254NPC1TA9KA96NTXK7\",\n            \"name\": \"John Doe\",\n            \"isActive\": false,\n            \"isInvited\": true,\n            \"isInvitationExpired\": false,\n            \"hasAcceptedInvitation\": false,\n            \"roles\": [\n                    \"role::accountviewer\",\n                    \"role::user\"\n                ],\n            \"schedules\": [],\n            \"email\": \"john_doe@email.com\"\n        },\n        {\n            \"type\": \"employees\",\n            \"id\": \"employee::john_doe5\",\n            \"uid\": \"01DZP6E254NPC1TA9KA96NTXK7\",\n            \"name\": \"John Doe\",\n            \"isActive\": false,\n            \"isInvited\": false,\n            \"isInvitationExpired\": false,\n            \"hasAcceptedInvitation\": false,\n            \"roles\": [\n                    \"role::accountviewer\",\n                    \"role::user\"\n                ],\n            \"schedules\": [],\n            \"email\": \"john_doe@email.com\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Edit Policy ID",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"new name\",\n  \"policy_id\": null,\n  \"timings\": [\n    {\n        \"id\":\"01EZ7KK7AZ3JEHA1GBRG46XN97\",\n      \"start\": 2160,\n      \"stop\": 2940\n    }\n  ],\n  \"zone\": \"Asia/Riyadh\"\n}"
+				},
+				"url": {
+					"raw": "{{schedules_server}}/schedules/01EZ82BN1J0GKRV2SHEEFASCN6/edit/policy",
+					"host": [
+						"{{schedules_server}}"
+					],
+					"path": [
+						"schedules",
+						"01EZ82BN1J0GKRV2SHEEFASCN6",
+						"edit",
+						"policy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Timezone",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"new name\",\n  \"policy_id\": null,\n  \"timings\": [\n    {\n        \"id\":\"01EZ7KK7AZ3JEHA1GBRG46XN97\",\n      \"start\": 2160,\n      \"stop\": 2940\n    }\n  ],\n  \"zone\": \"Asia/Riyadh\"\n}"
+				},
+				"url": {
+					"raw": "{{schedules_server}}/schedules/01EZ82BN1J0GKRV2SHEEFASCN6/edit/timezone",
+					"host": [
+						"{{schedules_server}}"
+					],
+					"path": [
+						"schedules",
+						"01EZ82BN1J0GKRV2SHEEFASCN6",
+						"edit",
+						"timezone"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Timeslot",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"id\":\"01EZ7KK7AZ3JEHA1GBRG46XN97\",\n      \"start\": 110,\n      \"stop\": 220\n    }"
+				},
+				"url": {
+					"raw": "{{schedules_server}}/schedules/01EZ82BN1J0GKRV2SHEEFASCN6/add/timeslot",
+					"host": [
+						"{{schedules_server}}"
+					],
+					"path": [
+						"schedules",
+						"01EZ82BN1J0GKRV2SHEEFASCN6",
+						"add",
+						"timeslot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Timeslot",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"id\":\"01EZ7KK7AZ3JEHA1GBRG46XN97\",\n      \"start\": 2160,\n      \"stop\": 2940\n    }"
+				},
+				"url": {
+					"raw": "{{schedules_server}}/schedules/01EZ82BN1J0GKRV2SHEEFASCN6/delete/timeslot",
+					"host": [
+						"{{schedules_server}}"
+					],
+					"path": [
+						"schedules",
+						"01EZ82BN1J0GKRV2SHEEFASCN6",
+						"delete",
+						"timeslot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create UI Settings",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"owner_id\": \"01EYZT7ZR4SBGQB5M4RWEJY0YW\",\n  \"time_interval\": \"5m\",\n  \"clock_format\": \"24h\",\n  \"start_of_week\": \"sunday\",\n  \"zone\": \"Asia/Riyadh\",\n  \"autosave\": true\n}"
+				},
+				"url": {
+					"raw": "{{schedules_server}}/settings/",
+					"host": [
+						"{{schedules_server}}"
+					],
+					"path": [
+						"settings",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get UI Settings",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"owner_id\": \"01EYZT7ZR4SBGQB5M4RWEJY0YW\",\n  \"time_interval\": \"5m\",\n  \"clock_format\": \"24h\",\n  \"start_of_week\": \"sunday\",\n  \"zone\": \"Asia/Riyadh\",\n  \"autosave\": true\n}"
+				},
+				"url": {
+					"raw": "{{schedules_server}}/settings/01EYZT7ZR4SBGQB5M4RWEJY0YW",
+					"host": [
+						"{{schedules_server}}"
+					],
+					"path": [
+						"settings",
+						"01EYZT7ZR4SBGQB5M4RWEJY0YW"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update UI Settings",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"owner_id\": \"01EYZT7ZR4SBGQB5M4RWEJY0YW\",\n  \"time_interval\": \"15m\",\n  \"clock_format\": \"24h\",\n  \"start_of_week\": \"monday\",\n  \"zone\": \"Asia/Riyadh\",\n  \"autosave\": false\n}"
+				},
+				"url": {
+					"raw": "{{schedules_server}}/settings/01EYZT7ZR4SBGQB5M4RWEJY0YW",
+					"host": [
+						"{{schedules_server}}"
+					],
+					"path": [
+						"settings",
+						"01EYZT7ZR4SBGQB5M4RWEJY0YW"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit UI Settings Time Interval",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"owner_id\": \"01EYZT7ZR4SBGQB5M4RWEJY0YW\",\n  \"time_interval\": \"5m\",\n  \"clock_format\": \"24h\",\n  \"start_of_week\": \"sunday\",\n  \"zone\": \"Asia/Riyadh\",\n  \"autosave\": true\n}"
+				},
+				"url": {
+					"raw": "{{schedules_server}}/settings/01EYZT7ZR4SBGQB5M4RWEJY0YW/edit/timeinterval",
+					"host": [
+						"{{schedules_server}}"
+					],
+					"path": [
+						"settings",
+						"01EYZT7ZR4SBGQB5M4RWEJY0YW",
+						"edit",
+						"timeinterval"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit UI Settings Clock Format",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"owner_id\": \"01EYZT7ZR4SBGQB5M4RWEJY0YW\",\n  \"time_interval\": \"5m\",\n  \"clock_format\": \"24h\",\n  \"start_of_week\": \"sunday\",\n  \"zone\": \"Asia/Riyadh\",\n  \"autosave\": true\n}"
+				},
+				"url": {
+					"raw": "{{schedules_server}}/settings/01EYZT7ZR4SBGQB5M4RWEJY0YW/edit/clockformat",
+					"host": [
+						"{{schedules_server}}"
+					],
+					"path": [
+						"settings",
+						"01EYZT7ZR4SBGQB5M4RWEJY0YW",
+						"edit",
+						"clockformat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit UI Settings Start of Week",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"owner_id\": \"01EYZT7ZR4SBGQB5M4RWEJY0YW\",\n  \"time_interval\": \"5m\",\n  \"clock_format\": \"24h\",\n  \"start_of_week\": \"sunday\",\n  \"zone\": \"Asia/Riyadh\",\n  \"autosave\": true\n}"
+				},
+				"url": {
+					"raw": "{{schedules_server}}/settings/01EYZT7ZR4SBGQB5M4RWEJY0YW/edit/startofweek",
+					"host": [
+						"{{schedules_server}}"
+					],
+					"path": [
+						"settings",
+						"01EYZT7ZR4SBGQB5M4RWEJY0YW",
+						"edit",
+						"startofweek"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit UI Settings Timezone",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"owner_id\": \"01EYZT7ZR4SBGQB5M4RWEJY0YW\",\n  \"time_interval\": \"5m\",\n  \"clock_format\": \"24h\",\n  \"start_of_week\": \"sunday\",\n  \"zone\": \"Asia/Riyadh\",\n  \"autosave\": true\n}"
+				},
+				"url": {
+					"raw": "{{schedules_server}}/settings/01EYZT7ZR4SBGQB5M4RWEJY0YW/edit/timezone",
+					"host": [
+						"{{schedules_server}}"
+					],
+					"path": [
+						"settings",
+						"01EYZT7ZR4SBGQB5M4RWEJY0YW",
+						"edit",
+						"timezone"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit UI Settings Autosave",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"owner_id\": \"01EYZT7ZR4SBGQB5M4RWEJY0YW\",\n  \"time_interval\": \"5m\",\n  \"clock_format\": \"24h\",\n  \"start_of_week\": \"sunday\",\n  \"zone\": \"Asia/Riyadh\",\n  \"autosave\": true\n}"
+				},
+				"url": {
+					"raw": "{{schedules_server}}/settings/01EYZT7ZR4SBGQB5M4RWEJY0YW/edit/autosave",
+					"host": [
+						"{{schedules_server}}"
+					],
+					"path": [
+						"settings",
+						"01EYZT7ZR4SBGQB5M4RWEJY0YW",
+						"edit",
+						"autosave"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Branches",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{schedules_server}}/employees/01EZ7PWNGF44R5BGBHV3DK849K",
+					"host": [
+						"{{schedules_server}}"
+					],
+					"path": [
+						"employees",
+						"01EZ7PWNGF44R5BGBHV3DK849K"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "List Employees",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{schedules_server}}/branches/01EZ7PWNGF44R5BGBHV3DK849K",
+							"host": [
+								"{{schedules_server}}"
+							],
+							"path": [
+								"branches",
+								"01EZ7PWNGF44R5BGBHV3DK849K"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"type\": \"branches\",\n            \"id\": \"branch::1st\",\n            \"uid\": \"01DZP6E254NPC1TA9KA96NTXK7\",\n            \"name\": \"1st Location\",\n            \"email\": \"first@corp.com\",\n            \"isActive\": true,\n            \"address\": \"12345 someplace st, New York City, NY, 12345\",\n            \"contactName\": \"John Doe\",\n            \"contactEmail\": \"john_doe@gmail.com\",\n            \"contactNumber\": \"0000000000\"\n        },\n        {\n            \"type\": \"branches\",\n            \"id\": \"branch::2nd\",\n            \"uid\": \"01DZP6E254NPC1TA9KA96NTXK7\",\n            \"name\": \"2nd Location\",\n            \"email\": \"second@corp.com\",\n            \"isActive\": false,\n            \"address\": \"12345 someplace st, New York City, NY, 12345\",\n            \"contactName\": \"John Doe\",\n            \"contactEmail\": \"john_doe@gmail.com\",\n            \"contactNumber\": \"0000000000\"\n        }\n    ]\n}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "schedules_server",
+			"value": "http://localhost:3030"
+		}
+	]
+}

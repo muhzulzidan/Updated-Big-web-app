@@ -1,0 +1,109 @@
+.auth-container {
+	margin: 100px;
+	font-family: "Raleway", sans-serif;
+}
+
+.auth-head {
+	margin-bottom: 3px;
+	color: var(--blue-1);
+	font-size: 40px;
+	font-weight: 900;
+	line-height: 47px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.auth-subhead {
+	margin-bottom: 61.7px;
+	color: var(--blue-1);
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 19px;
+	text-align: center;
+}
+
+.vertical-separator {
+	margin: 130px 100px 0 100px;
+	width: 2px;
+	height: 300px;
+	opacity: 0.7;
+	background-color: var(--blue-1);
+}
+
+.auth-forgot {
+	margin-bottom: 42px;
+	color: var(--blue-1);
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 19px;
+	text-align: right;
+	cursor: pointer;
+}
+
+.auth-submit {
+	margin: auto;
+	width: 272px;
+	height: 68.5px;
+	border-radius: 16px;
+	color: #fff;
+	background: var(--blue-1);
+	border: none;
+	font-family: "Raleway" sans-serif;
+	font-size: 26px;
+	font-weight: 900;
+	text-align: center;
+	line-height: 30px;
+	cursor: pointer;
+	transition: box-shadow ease-in-out 300ms, opacity ease-in-out 300ms;
+}
+
+.auth-submit:hover {
+	opacity: 0.9;
+	box-shadow: 0 0px 50px 5px rgba(0, 0, 0, 0.16);
+}
+
+.auth-checkbox {
+    display: none;
+}
+
+.auth-checkbox-label {
+    cursor: pointer;
+	color: var(--blue-1);
+    user-select: none;
+}
+
+.auth-checkbox-label::before {
+    content: "";
+    position: relative;
+    display: inline-block;
+    vertical-align: baseline;
+    left: -13px;
+    top: 2px;
+    width: 16px;
+    height: 16px;
+    border-radius: 5px;
+    border: 2px solid var(--blue-1);
+    transition: background-color 300ms;
+}
+
+.auth-checkbox:checked ~ .auth-checkbox-label::before{
+    background-color: var(--blue-1);
+}
+
+.auth-checkbox-label-error::before {
+	border: 2px solid red;
+}
+
+.auth-error-message {
+	position: absolute;
+	transform: translateY(-18px);
+	font-size: 0.5rem;
+	color: red;
+}
+
+.auth-message {
+	margin: 3px;
+	text-align: center;
+	font-size: 0.8rem;
+	font-weight: 600;
+}

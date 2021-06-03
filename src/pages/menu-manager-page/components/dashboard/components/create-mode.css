@@ -1,0 +1,100 @@
+.menumanager-content .create-mode{
+    width: 100%;
+    font-size: calc(7px + 1vw);
+    display: flex;
+
+    justify-content: space-between;
+
+}
+
+.create-mode > div {
+    display: flex;
+
+    padding:1em;
+}
+
+.create-mode h2{
+    font-weight: 800;
+}
+.create-mode h2 span {
+    font-weight: 400;
+}
+.create-mode button {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+
+    padding: .2em;
+    padding-left:1.4em;
+    margin-left: 1em;
+
+    border: 1px solid var(--blue-1);
+    border-radius: 30px;
+    
+    width: 10em;
+
+}
+.create-mode button svg {
+    margin-right:1em;
+}
+
+.categories-name-container{
+    display:flex;
+    flex-wrap: wrap;
+    padding-left: 1em;
+}
+
+.categories-name-container .categories-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2.2em;
+    margin: .5em;
+
+    border-radius: 30px;
+    border: 1px solid #00000038;
+
+    width: 15em;
+    height: 5em;
+}
+
+.product-container {
+    display: flex;
+    flex-direction: row;
+}
+.product-left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.product-right{
+    display: flex;
+    flex-direction:column;
+    float:right;
+}
+.bottom-container{
+    display: flex;
+    position: absolute;
+    bottom: 7vh;
+    padding-left: 1em;
+}
+.bottom-container button{
+    color: white;
+    border-radius: 25px;
+    width: 10em;
+    height: 2.5em;
+    background-color:var(--blue-1);    
+    align-items: center;
+}
+.bottom-container .price{
+    display:flex;
+    width: 20em;
+    position: relative;
+    align-items: baseline;
+    right: -14em;
+}
+.bottom-container .price p {
+    color:var(--blue-1);
+    font-style: italic;
+}

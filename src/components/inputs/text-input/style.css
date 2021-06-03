@@ -1,0 +1,26 @@
+.text-input-container {
+    padding: 25px;
+    border: 1px solid #DBE2EA;
+    border-radius: 15px;
+    background: white;
+    display: flex;
+}
+
+.text-input-container input {
+    max-width: 100%;
+}
+
+.text-input {
+    flex-grow: 1;
+    border-width:0px;
+    border:none;
+    outline: none;
+}
+
+.text-input-prefix {
+    margin-right: 25px;
+}
+
+.text-input-suffix {
+    margin-left: 25px;
+}

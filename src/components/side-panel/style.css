@@ -1,0 +1,56 @@
+.side-panel-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: flex-end;
+    transition: opacity ease-out 0.2s;
+}
+
+.side-panel-container.hidden {
+    opacity: 0;
+}
+
+.side-panel-container .side-panel {
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    min-width: 400px;
+    background-color: white;
+    overflow-y: auto;
+    transition: transform ease-out 0.2s;
+
+    width: 70%;
+}
+
+.side-panel-container.hidden .side-panel {
+    transform: translateX(100%);
+}
+
+.side-panel-status-bar {
+    display: flex;
+    align-items: center;
+    margin: 60px 40px;
+}
+
+.side-panel-title {
+    margin-left: 20px;
+    margin-right: 100px;
+    font-size: calc(23px + 0.6vw);
+    font-weight: 400;
+    white-space: nowrap;
+    color: var(--blue-1);
+}
+
+.side-panel-close-button {
+    margin-left: auto;
+    cursor: pointer;
+    transition: opacity 300ms;
+}
+
+.side-panel-close-button:hover {
+    opacity: 0.5;
+}

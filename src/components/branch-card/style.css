@@ -1,0 +1,84 @@
+.branch-card {
+    position: relative;
+    color: var(--blue-1);
+    font-weight: 600;
+}
+
+.branch-name {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.branch-actions {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+.branch-address {
+    margin: 10px 0;
+}
+
+.branch-actions>* {
+    margin: 0 5px;
+}
+
+.branch-actions .button {
+    border-width: 3px;
+    padding: 5px 10px;
+    min-width: 0;
+}
+
+/* Grid Layout */
+.item-container-grid .branch-card {
+    background-color: #FFFAF4;
+    border: 1px solid var(--blue-1);
+    border-radius: 15px;
+    width: 330px;
+    height: 250px;
+    padding: 18px;
+    margin: 15px;
+}
+
+.item-container-grid .branch-name {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.item-container-grid .branch-email {
+    display: none;
+}
+
+/* List Layout */
+.item-container-list .branch-card {
+    border-top: 1px solid #DBE2EA;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    color: #8C8C8F;
+}
+
+.item-container-list .branch-name {
+    width: 250px;
+    padding-left: 90px;
+}
+
+.item-container-list .branch-actions {
+    display: none;
+}
+
+.item-container-list .branch-phone-number {
+    display: none;
+}
+
+.item-container-list .branch-address {
+    width: 650px;
+    padding-left: 90px;
+}
+
+.item-container-list .branch-email {
+    width: 500px;
+    padding-left: 90px;
+}
