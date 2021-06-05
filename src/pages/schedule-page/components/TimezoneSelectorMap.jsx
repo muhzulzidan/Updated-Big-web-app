@@ -1,21 +1,19 @@
 
-/* global process */
 import React from "react";
 import PropTypes from "prop-types";
 import { Paper, Box, Typography, Fade } from "@material-ui/core";
-import { withStyles } from "@material-ui/styles";
+import { withStyles } from "@material-ui/core/styles";
 import { SizeMe } from "react-sizeme";
 import TextField from "@material-ui/core/TextField";
 import { Skeleton } from "@material-ui/lab";
 import TimezoneMapGL, { Provider } from "./ReactTimezoneMapGL";
 import timezoneTopo from "./ReactTimezoneMapGL/data/timezoneTopo.json";
 import "mapbox-gl/dist/mapbox-gl.css";
+import TimezoneSelect from "./TimezoneSelect"
 
 const styles = (theme) => ({
   root: {
     // width: "80%",
-    padding:"0px",
-    paddingTop:" 3em",
   },
   heading: {
     color: "#2d2d61",
@@ -139,7 +137,7 @@ class TimezoneSelectorMap extends React.Component {
                   className={classes.name}
                   onChange={this.handleNameChange}
                 />
-                {/* <TimezoneSelect value={selectTimezone} onChange={this.handleChange} /> */}
+                <TimezoneSelect value={selectTimezone} onChange={this.handleChange} />
                 <Box mt={2}>
                   <Typography className={classes.heading}>
                     Select Timezone

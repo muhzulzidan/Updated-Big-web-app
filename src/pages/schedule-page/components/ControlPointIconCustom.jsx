@@ -10,7 +10,7 @@ const styles = {
         // textTransform: "none",
         // borderRadius: 30,
         color: "#2d2d61",
-        fontSize: "calc(1.8em + 1vw)",
+        fontSize: "50px",
         // padding: "0px 20px",
         "&:hover": {
             cursor: "pointer",

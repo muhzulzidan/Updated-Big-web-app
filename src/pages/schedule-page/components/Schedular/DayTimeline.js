@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect, useCallback} from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Tooltip as MaterialTooltip, withStyles } from "@material-ui/core";
 import { Range } from "rc-slider";
 import "rc-slider/assets/index.css";
@@ -13,8 +13,6 @@ import styled, { withTheme } from "styled-components";
 import { transparentize } from "polished";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
-
-import onClickOutside from "react-onclickoutside" 
 
 const RangeLabel = styled.div`
   color: #021a53;
@@ -264,8 +262,8 @@ const DayTimeline = ({
         : 0
       : size.width - tooltipWidth;
 
-  const [width, setWidth] = useState(0);
-  const elementRef = useRef(null);
+  // const [width, setWidth] = useState(0);
+  // const elementRef = useRef(null);
 
   useEffect(() => {
     if (movingRange.released) {
@@ -308,8 +306,8 @@ const DayTimeline = ({
       }
     }
 
-    setWidth(elementRef.current.getBoundingClientRect().width);
-  }, [addNewRange, copiedRange.range, day, maxValue, movingRange.day, movingRange.originDay, movingRange.range, movingRange.rangeIndex, movingRange.released, ranges, setMovingRange, setRanges]); 
+    // setWidth(elementRef.current.getBoundingClientRect().width);
+  }, [movingRange.released]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const baseTrackStyle = {
     borderRadius: 0,
@@ -460,7 +458,7 @@ const DayTimeline = ({
     setActiveButton("");
   };
 
-  const addNewRange = useCallback((val) => {
+  const addNewRange = (val) => {
     if (val[0] !== val[1]) {
       setRanges((prev) => {
         let arr = [...prev];
@@ -469,7 +467,7 @@ const DayTimeline = ({
       });
       setSelectedItems([]);
     }
-  });
+  };
 
   const removeRange = (index) => {
     setRanges((prev) => {
@@ -1010,9 +1008,9 @@ const DayTimeline = ({
   );
 };
 
-const clickOutsideConfig = {
-  handleClickOutside: () => DayTimeline.handleClickOutside
-};
+// const clickOutsideConfig = {
+//   handleClickOutside: () => DayTimeline.handleClickOutside
+// };
 
-export default withTheme(onClickOutside(DayTimeline, clickOutsideConfig));
-// export default withTheme(DayTimeline);
+// export default withTheme(onClickOutside(DayTimeline, clickOutsideConfig));
+export default withTheme(DayTimeline);

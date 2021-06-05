@@ -279,7 +279,7 @@ const WeekScheduler = ({
     } else {
       didMountRef.current = true;
     }
-  }, [weekStart]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [currentSchedule, setCurrentSchedule, weekStart]); 
 
   useEffect(() => {
     let interval;
@@ -551,7 +551,7 @@ const WeekScheduler = ({
 
   const [jsonGen, setJSON] = useState(null);
   useEffect(() => {
-    if (activeButton === "info") {
+    if (activeButton == "info") {
       const generateJSON = (schedule) => {
         let json = { ...schedule };
         json.zone = json.timezone;
@@ -610,15 +610,10 @@ const WeekScheduler = ({
             display="flex"
             alignItems="center"
             justifyContent="space-between"
-            className="mb-2 position-relative "
-            style={{
-              paddingBottom:"5em"
-            }}
-
+            className="pt-1 px-4 mb-2 position-relative "
           >
             {schedulerHeader}
-            
-            <Box ref={actionsPanelRef} ml={3} pb={2} mt={10}>
+            <Box ref={actionsPanelRef} ml={3} pb={2} mt={3}>
               <ActionsPanel
                 selectedItemsLength={selectedItems.length}
                 activeButton={activeButton}
